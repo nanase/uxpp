@@ -2,7 +2,7 @@
 <configurationDescriptor version="90">
   <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
     <logicalFolder name="SourceFiles" displayName="ソース・ファイル" projectFiles="true">
-      <itemPath>main.cpp</itemPath>
+      <itemPath>src/main.cpp</itemPath>
     </logicalFolder>
     <logicalFolder name="HeaderFiles" displayName="ヘッダー・ファイル" projectFiles="true">
     </logicalFolder>
@@ -33,7 +33,7 @@
           <commandLine>-std=c++0x</commandLine>
         </ccTool>
       </compileType>
-      <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      <item path="src/main.cpp" ex="false" tool="1" flavor2="0">
       </item>
     </conf>
     <conf name="Release" type="1">
@@ -56,7 +56,7 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
-      <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      <item path="src/main.cpp" ex="false" tool="1" flavor2="0">
       </item>
     </conf>
   </confs>
