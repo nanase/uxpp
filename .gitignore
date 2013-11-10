@@ -11,3 +11,8 @@
 *.lai
 *.la
 *.a
+dist/
+build/
+ 
+#netbeans specific
+nbproject/private
