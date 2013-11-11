@@ -56,13 +56,13 @@ namespace uxpp {
      * 左チャネルのレベルを取得または設定します。
      * @return 左チャネルのレベル。
      */
-    float getL();
+    float getL() const;
 
     /**
      * 右チャネルのレベルを取得または設定します。
      * @return 右チャネルのレベル。
      */
-    float getR();
+    float getR() const;
     // </editor-fold>    
 
   private:

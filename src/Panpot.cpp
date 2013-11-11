@@ -50,11 +50,11 @@ namespace uxpp {
 
   // <editor-fold desc="-- Methods --">
 
-  float Panpot::getL() {
+  float Panpot::getL() const {
     return this->l;
   }
 
-  float Panpot::getR() {
+  float Panpot::getR() const {
     return this->r;
   }
   // </editor-fold>
