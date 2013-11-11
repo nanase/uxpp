@@ -32,13 +32,15 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 namespace uxpp {
 
   /**
-   * 時間によって変化するパラメータを実装するためのエンベロープ (包絡線) クラスです。
+   * 時間によって変化するパラメータを実装するための
+   * エンベロープ (包絡線) クラスです。
    */
   class Envelope {
   public:
     // <editor-fold desc="-- Construnctors --">
     /**
-     * サンプリング周波数を指定して新しい Envelope クラスのインスタンスを初期化します。
+     * サンプリング周波数を指定して
+     * 新しい Envelope クラスのインスタンスを初期化します。
      * @param samplingRate サンプリング周波数。
      */
     Envelope(float samplingRate);

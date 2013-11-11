@@ -36,14 +36,16 @@ namespace uxpp {
   public:
     // <editor-fold desc="-- Construnctors --">
     /**
-     * 左右チャネルのレベルを指定して新しい Panpot 構造体のインスタンスを初期化します。
+     * 左右チャネルのレベルを指定して
+     * 新しい Panpot 構造体のインスタンスを初期化します。
      * @param lChannel 左チャネルのレベル。
      * @param rChannel 右チャネルのレベル。
      */
     Panpot(float lChannel, float rChannel);
 
     /**
-     * 左右チャネルのレベルを制御するパンポット値を指定して新しい Panpot 構造体のインスタンスを初期化します。
+     * 左右チャネルのレベルを制御するパンポット値を指定して
+     * 新しい Panpot 構造体のインスタンスを初期化します。
      * @param value パンポット値。
      */
     Panpot(float value);
