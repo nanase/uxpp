@@ -36,6 +36,7 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 # Object Files
 OBJECTFILES= \
 	${OBJECTDIR}/src/Envelope.o \
+	${OBJECTDIR}/src/Handle.o \
 	${OBJECTDIR}/src/Panpot.o \
 	${OBJECTDIR}/src/main.o
 
@@ -68,6 +69,11 @@ ${OBJECTDIR}/src/Envelope.o: src/Envelope.cpp
 	${MKDIR} -p ${OBJECTDIR}/src
 	${RM} $@.d
 	$(COMPILE.cc) -O2 -Iinclude -MMD -MP -MF $@.d -o ${OBJECTDIR}/src/Envelope.o src/Envelope.cpp
+
+${OBJECTDIR}/src/Handle.o: src/Handle.cpp 
+	${MKDIR} -p ${OBJECTDIR}/src
+	${RM} $@.d
+	$(COMPILE.cc) -O2 -Iinclude -MMD -MP -MF $@.d -o ${OBJECTDIR}/src/Handle.o src/Handle.cpp
 
 ${OBJECTDIR}/src/Panpot.o: src/Panpot.cpp 
 	${MKDIR} -p ${OBJECTDIR}/src
