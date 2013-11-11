@@ -15,6 +15,7 @@
         <itemPath>include/Envelope.hpp</itemPath>
         <itemPath>include/EnvelopeOperate.hpp</itemPath>
         <itemPath>include/EnvelopeState.hpp</itemPath>
+        <itemPath>include/HandleType.hpp</itemPath>
         <itemPath>include/Panpot.hpp</itemPath>
       </logicalFolder>
     </logicalFolder>
@@ -55,6 +56,7 @@
       </item>
       <item path="include/EnvelopeState.hpp" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="include/HandleType.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="include/Panpot.hpp" ex="false" tool="3" flavor2="0">
       </item>
@@ -98,6 +100,8 @@
       <item path="include/EnvelopeOperate.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="include/EnvelopeState.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/HandleType.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="include/Panpot.hpp" ex="false" tool="3" flavor2="0">
       </item>
