@@ -24,8 +24,8 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 #include <cfloat>
 #include <cassert>
-#include "common.h"
-#include "Envelope.h"
+#include "common.hpp"
+#include "Envelope.hpp"
 
 namespace uxpp {
 

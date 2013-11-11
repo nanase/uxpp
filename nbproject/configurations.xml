@@ -6,14 +6,16 @@
         <itemPath>src/Envelope.cpp</itemPath>
         <itemPath>src/Panpot.cpp</itemPath>
         <itemPath>src/common.h</itemPath>
+        <itemPath>src/common.hpp</itemPath>
       </logicalFolder>
       <itemPath>src/main.cpp</itemPath>
     </logicalFolder>
     <logicalFolder name="HeaderFiles" displayName="ヘッダー・ファイル" projectFiles="true">
       <logicalFolder name="f1" displayName="component" projectFiles="true">
-        <itemPath>include/Envelope.h</itemPath>
-        <itemPath>include/EnvelopeOperate.h</itemPath>
-        <itemPath>include/EnvelopeState.h</itemPath>
+        <itemPath>include/Envelope.hpp</itemPath>
+        <itemPath>include/EnvelopeOperate.hpp</itemPath>
+        <itemPath>include/EnvelopeState.hpp</itemPath>
+        <itemPath>include/Panpot.hpp</itemPath>
       </logicalFolder>
     </logicalFolder>
     <logicalFolder name="ResourceFiles" displayName="リソース・ファイル" projectFiles="true">
@@ -47,17 +49,22 @@
           <commandLine>-std=c++0x</commandLine>
         </ccTool>
       </compileType>
-      <item path="include/Envelope.h" ex="false" tool="3" flavor2="0">
+      <item path="include/Envelope.hpp" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="include/EnvelopeOperate.h" ex="false" tool="3" flavor2="0">
+      <item path="include/EnvelopeOperate.hpp" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="include/EnvelopeState.h" ex="false" tool="3" flavor2="0">
+      <item path="include/EnvelopeState.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      </item>
+      <item path="include/Panpot.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/Envelope.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/Panpot.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/common.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/common.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/main.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -86,17 +93,21 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
-      <item path="include/Envelope.h" ex="false" tool="3" flavor2="0">
+      <item path="include/Envelope.hpp" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="include/EnvelopeOperate.h" ex="false" tool="3" flavor2="0">
+      <item path="include/EnvelopeOperate.hpp" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="include/EnvelopeState.h" ex="false" tool="3" flavor2="0">
+      <item path="include/EnvelopeState.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/Panpot.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/Envelope.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/Panpot.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/common.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/common.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/main.cpp" ex="false" tool="1" flavor2="0">
       </item>

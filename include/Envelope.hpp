@@ -26,8 +26,8 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 #define	ENVELOPE_H
 
 #include <cstdint>
-#include "EnvelopeState.h"
-#include "EnvelopeOperate.h"
+#include "EnvelopeState.hpp"
+#include "EnvelopeOperate.hpp"
 
 namespace uxpp {
 
