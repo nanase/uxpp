@@ -51,7 +51,7 @@ namespace uxpp {
      * 現在のエンベロープの状態を表す列挙値を取得します。
      * @return 現在のエンベロープの状態を表す列挙値。
      */
-    EnvelopeState getState();
+    EnvelopeState getState() const;
 
     /**
      * このインスタンスにおけるすべてのパラメータを既定値に戻します。

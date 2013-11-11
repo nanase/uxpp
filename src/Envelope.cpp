@@ -41,7 +41,7 @@ namespace uxpp {
 
   // <editor-fold desc="-- Methods --">
 
-  EnvelopeState Envelope::getState() {
+  EnvelopeState Envelope::getState() const {
     return this->state;
   }
 
