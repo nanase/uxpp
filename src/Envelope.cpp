@@ -31,10 +31,9 @@ namespace uxpp {
 
   // <editor-fold desc="-- Construnctors --">
 
-  Envelope::Envelope(float samplingRate) {
+  Envelope::Envelope(float samplingRate) : samplingRate(samplingRate) {
     assert(samplingRate > 0.0f);
     
-    this->samplingRate = samplingRate;
     this->reset();
   }
   // </editor-fold>
