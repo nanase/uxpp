@@ -19,6 +19,7 @@
         <itemPath>include/Panpot.hpp</itemPath>
       </logicalFolder>
       <itemPath>src/common.hpp</itemPath>
+      <itemPath>src/template_utils.hpp</itemPath>
     </logicalFolder>
     <logicalFolder name="ResourceFiles" displayName="リソース・ファイル" projectFiles="true">
     </logicalFolder>
@@ -73,6 +74,8 @@
       </item>
       <item path="src/main.cpp" ex="false" tool="1" flavor2="0">
       </item>
+      <item path="src/template_utils.hpp" ex="false" tool="3" flavor2="0">
+      </item>
     </conf>
     <conf name="Release" type="1">
       <toolsSet>
@@ -120,6 +123,8 @@
       </item>
       <item path="src/main.cpp" ex="false" tool="1" flavor2="0">
       </item>
+      <item path="src/template_utils.hpp" ex="false" tool="3" flavor2="0">
+      </item>
     </conf>
     <conf name="ReleaseRPI" type="1">
       <toolsSet>
@@ -157,6 +162,8 @@
       <item path="src/common.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/template_utils.hpp" ex="false" tool="3" flavor2="0">
       </item>
     </conf>
   </confs>
