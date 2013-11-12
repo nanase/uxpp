@@ -17,6 +17,7 @@
         <itemPath>include/Handle.hpp</itemPath>
         <itemPath>include/HandleType.hpp</itemPath>
         <itemPath>include/Panpot.hpp</itemPath>
+        <itemPath>include/RandomNoiseOperate.hpp</itemPath>
       </logicalFolder>
       <itemPath>src/common.hpp</itemPath>
       <itemPath>src/template_utils.hpp</itemPath>
@@ -63,6 +64,8 @@
       <item path="include/HandleType.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="include/Panpot.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/RandomNoiseOperate.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/Envelope.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -113,6 +116,8 @@
       </item>
       <item path="include/Panpot.hpp" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="include/RandomNoiseOperate.hpp" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="src/Envelope.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/Handle.cpp" ex="false" tool="1" flavor2="0">
@@ -152,6 +157,8 @@
       <item path="include/HandleType.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="include/Panpot.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/RandomNoiseOperate.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/Envelope.cpp" ex="false" tool="1" flavor2="0">
       </item>
