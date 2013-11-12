@@ -32,19 +32,17 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 namespace uxpp {
   // <editor-fold desc="-- Construnctors --">
 
-  Panpot::Panpot(float lChannel, float rChannel) {
+  Panpot::Panpot(float lChannel, float rChannel) :
+  l(clamp(lChannel, 1.0f, 0.0f)),
+  r(clamp(rChannel, 1.0f, 0.0f)) {
     assert(lChannel >= 0.0f && lChannel <= 1.0f);
     assert(rChannel >= 0.0f && rChannel <= 1.0f);
-
-    this->l = clamp(lChannel, 1.0f, 0.0f);
-    this->r = clamp(rChannel, 1.0f, 0.0f);
   }
 
-  Panpot::Panpot(float value) {
+  Panpot::Panpot(float value) :
+  l(value >= 0.0f ? (float) sin(((double) value + 1.0) * M_PI / 2.0) : 1.0f),
+  r(value <= 0.0f ? (float) sin((-(double) value + 1.0) * M_PI / 2.0) : 1.0f) {
     assert(value >= -1.0f && value <= 1.0f);
-
-    this->l = value >= 0.0f ? (float) sin(((double) value + 1.0) * M_PI / 2.0) : 1.0f;
-    this->r = value <= 0.0f ? (float) sin((-(double) value + 1.0) * M_PI / 2.0) : 1.0f;
   }
   // </editor-fold>
 
