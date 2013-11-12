@@ -22,6 +22,14 @@ CND_ARTIFACT_PATH_Release=dist/Release/GNU-Linux-x86/uxpp
 CND_PACKAGE_DIR_Release=dist/Release/GNU-Linux-x86/package
 CND_PACKAGE_NAME_Release=uxpp.tar
 CND_PACKAGE_PATH_Release=dist/Release/GNU-Linux-x86/package/uxpp.tar
+# ReleaseRPI configuration
+CND_PLATFORM_ReleaseRPI=GNU-Linux-x86
+CND_ARTIFACT_DIR_ReleaseRPI=dist/ReleaseRPI/GNU-Linux-x86
+CND_ARTIFACT_NAME_ReleaseRPI=uxpp
+CND_ARTIFACT_PATH_ReleaseRPI=dist/ReleaseRPI/GNU-Linux-x86/uxpp
+CND_PACKAGE_DIR_ReleaseRPI=dist/ReleaseRPI/GNU-Linux-x86/package
+CND_PACKAGE_NAME_ReleaseRPI=uxpp.tar
+CND_PACKAGE_PATH_ReleaseRPI=dist/ReleaseRPI/GNU-Linux-x86/package/uxpp.tar
 #
 # include compiler specific variables
 #
