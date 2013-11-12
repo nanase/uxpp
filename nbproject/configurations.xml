@@ -6,7 +6,6 @@
         <itemPath>src/Envelope.cpp</itemPath>
         <itemPath>src/Handle.cpp</itemPath>
         <itemPath>src/Panpot.cpp</itemPath>
-        <itemPath>src/common.hpp</itemPath>
       </logicalFolder>
       <itemPath>src/main.cpp</itemPath>
     </logicalFolder>
@@ -19,6 +18,7 @@
         <itemPath>include/HandleType.hpp</itemPath>
         <itemPath>include/Panpot.hpp</itemPath>
       </logicalFolder>
+      <itemPath>src/common.hpp</itemPath>
     </logicalFolder>
     <logicalFolder name="ResourceFiles" displayName="リソース・ファイル" projectFiles="true">
     </logicalFolder>
