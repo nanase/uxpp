@@ -27,36 +27,28 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 namespace uxpp {
   // <editor-fold desc="-- Construnctors --">
 
-  Handle::Handle(int32_t targetPart, HandleType type)
-  : Handle(targetPart, type, 0, 0.0f) {
+  Handle::Handle(int32_t targetPart, HandleType type) :
+  targetPart(targetPart), type(type), data1(0), data2(0.0f) {
   }
 
-  Handle::Handle(int32_t targetPart, HandleType type, int32_t data1)
-  : Handle(targetPart, type, data1, 0.0f) {
+  Handle::Handle(int32_t targetPart, HandleType type, int32_t data1) :
+  targetPart(targetPart), type(type), data1(data1), data2(0.0f) {
   }
 
-  Handle::Handle(int32_t targetPart, HandleType type, float data2)
-  : Handle(targetPart, type, 0, data2) {
+  Handle::Handle(int32_t targetPart, HandleType type, float data2) :
+  targetPart(targetPart), type(type), data1(0), data2(data2) {
   }
 
   Handle::Handle(
-          int32_t targetPart,
-          HandleType type,
-          int32_t data1,
-          float data2) {
-    this->targetPart = targetPart;
-    this->type = type;
-
-    this->data1 = data1;
-    this->data2 = data2;
+          int32_t targetPart, HandleType type, int32_t data1, float data2) :
+  targetPart(targetPart), type(type), data1(data1), data2(data2) {
   }
 
-  Handle::Handle(const Handle& handle, int32_t newTargetPart) {
-    this->targetPart = newTargetPart;
-    this->type = handle.type;
-
-    this->data1 = handle.data1;
-    this->data2 = handle.data2;
+  Handle::Handle(const Handle& handle, int32_t newTargetPart) :
+  targetPart(newTargetPart),
+  type(handle.type),
+  data1(handle.data1),
+  data2(handle.data2) {
   }
   // </editor-fold> 
 
