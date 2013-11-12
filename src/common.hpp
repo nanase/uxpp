@@ -25,8 +25,12 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 #ifndef COMMON_H
 #define	COMMON_H
 
+// <editor-fold desc="-- Macros --">
+
 /* クランプ関数 */
 #define clamp(value, max, min)  (value < min ? min : value > max ? max : value)
+
+// </editor-fold>
 
 #endif	/* COMMON_H */
 
