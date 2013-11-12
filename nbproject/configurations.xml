@@ -44,11 +44,11 @@
       </toolsSet>
       <compileType>
         <ccTool>
+          <standard>8</standard>
           <commandlineTool>g++</commandlineTool>
           <incDir>
             <pElem>include</pElem>
           </incDir>
-          <commandLine>-std=c++0x</commandLine>
         </ccTool>
       </compileType>
       <item path="include/Envelope.hpp" ex="false" tool="3" flavor2="0">
@@ -86,10 +86,10 @@
         </cTool>
         <ccTool>
           <developmentMode>5</developmentMode>
+          <standard>8</standard>
           <incDir>
             <pElem>include</pElem>
           </incDir>
-          <commandLine>-std=c++0x</commandLine>
         </ccTool>
         <fortranCompilerTool>
           <developmentMode>5</developmentMode>

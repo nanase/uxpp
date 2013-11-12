@@ -45,8 +45,8 @@ OBJECTFILES= \
 CFLAGS=
 
 # CC Compiler Flags
-CCFLAGS=-std=c++0x
-CXXFLAGS=-std=c++0x
+CCFLAGS=
+CXXFLAGS=
 
 # Fortran Compiler Flags
 FFLAGS=
@@ -68,22 +68,22 @@ ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/uxpp: ${OBJECTFILES}
 ${OBJECTDIR}/src/Envelope.o: src/Envelope.cpp 
 	${MKDIR} -p ${OBJECTDIR}/src
 	${RM} $@.d
-	$(COMPILE.cc) -O2 -Iinclude -MMD -MP -MF $@.d -o ${OBJECTDIR}/src/Envelope.o src/Envelope.cpp
+	$(COMPILE.cc) -O2 -Iinclude -std=c++11 -MMD -MP -MF $@.d -o ${OBJECTDIR}/src/Envelope.o src/Envelope.cpp
 
 ${OBJECTDIR}/src/Handle.o: src/Handle.cpp 
 	${MKDIR} -p ${OBJECTDIR}/src
 	${RM} $@.d
-	$(COMPILE.cc) -O2 -Iinclude -MMD -MP -MF $@.d -o ${OBJECTDIR}/src/Handle.o src/Handle.cpp
+	$(COMPILE.cc) -O2 -Iinclude -std=c++11 -MMD -MP -MF $@.d -o ${OBJECTDIR}/src/Handle.o src/Handle.cpp
 
 ${OBJECTDIR}/src/Panpot.o: src/Panpot.cpp 
 	${MKDIR} -p ${OBJECTDIR}/src
 	${RM} $@.d
-	$(COMPILE.cc) -O2 -Iinclude -MMD -MP -MF $@.d -o ${OBJECTDIR}/src/Panpot.o src/Panpot.cpp
+	$(COMPILE.cc) -O2 -Iinclude -std=c++11 -MMD -MP -MF $@.d -o ${OBJECTDIR}/src/Panpot.o src/Panpot.cpp
 
 ${OBJECTDIR}/src/main.o: src/main.cpp 
 	${MKDIR} -p ${OBJECTDIR}/src
 	${RM} $@.d
-	$(COMPILE.cc) -O2 -Iinclude -MMD -MP -MF $@.d -o ${OBJECTDIR}/src/main.o src/main.cpp
+	$(COMPILE.cc) -O2 -Iinclude -std=c++11 -MMD -MP -MF $@.d -o ${OBJECTDIR}/src/main.o src/main.cpp
 
 # Subprojects
 .build-subprojects:
