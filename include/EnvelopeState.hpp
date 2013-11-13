@@ -46,6 +46,13 @@ namespace uxpp {
      */
     release,
   };
+  
+  const std::unordered_map<std::string, EnvelopeState>
+          EnvelopeStateString = {
+    {"silence", EnvelopeState::silence},
+    {"attack", EnvelopeState::attack},
+    {"release", EnvelopeState::release},
+  };
 }
 
 #endif	/* ENVELOPESTATE_H */
