@@ -62,6 +62,21 @@ namespace uxpp {
      */
     release = 0x05,
   };
+  
+  const std::unordered_map<std::string, EnvelopeOperate>
+          EnvelopeOperateString = {
+    {"none", EnvelopeOperate::none},
+    {"attack", EnvelopeOperate::attack},
+    {"peak", EnvelopeOperate::peak},
+    {"decay", EnvelopeOperate::decay},
+    {"sustain", EnvelopeOperate::sustain},
+    {"release", EnvelopeOperate::release},    
+    {"a", EnvelopeOperate::attack},
+    {"p", EnvelopeOperate::peak},
+    {"d", EnvelopeOperate::decay},
+    {"s", EnvelopeOperate::sustain},
+    {"r", EnvelopeOperate::release},
+  };
 }
 
 #endif	/* ENVELOPEOPERATE_H */
