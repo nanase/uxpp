@@ -11,6 +11,7 @@
     </logicalFolder>
     <logicalFolder name="HeaderFiles" displayName="ヘッダー・ファイル" projectFiles="true">
       <logicalFolder name="f1" displayName="component" projectFiles="true">
+        <itemPath>include/BasicWaveformOperate.hpp</itemPath>
         <itemPath>include/Envelope.hpp</itemPath>
         <itemPath>include/EnvelopeOperate.hpp</itemPath>
         <itemPath>include/EnvelopeState.hpp</itemPath>
@@ -53,6 +54,8 @@
           </incDir>
         </ccTool>
       </compileType>
+      <item path="include/BasicWaveformOperate.hpp" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="include/Envelope.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="include/EnvelopeOperate.hpp" ex="false" tool="3" flavor2="0">
@@ -104,6 +107,8 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
+      <item path="include/BasicWaveformOperate.hpp" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="include/Envelope.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="include/EnvelopeOperate.hpp" ex="false" tool="3" flavor2="0">
@@ -146,6 +151,8 @@
           <commandLine>-std=c++0x</commandLine>
         </ccTool>
       </compileType>
+      <item path="include/BasicWaveformOperate.hpp" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="include/Envelope.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="include/EnvelopeOperate.hpp" ex="false" tool="3" flavor2="0">
