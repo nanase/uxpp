@@ -21,6 +21,7 @@
         <itemPath>include/Panpot.hpp</itemPath>
         <itemPath>include/RandomNoiseOperate.hpp</itemPath>
         <itemPath>include/StepWaveformOperate.hpp</itemPath>
+        <itemPath>include/VolumeOperate.hpp</itemPath>
       </logicalFolder>
       <itemPath>src/common.hpp</itemPath>
       <itemPath>src/template_utils.hpp</itemPath>
@@ -75,6 +76,8 @@
       <item path="include/RandomNoiseOperate.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="include/StepWaveformOperate.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/VolumeOperate.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/Envelope.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -133,6 +136,8 @@
       </item>
       <item path="include/StepWaveformOperate.hpp" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="include/VolumeOperate.hpp" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="src/Envelope.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/Handle.cpp" ex="false" tool="1" flavor2="0">
@@ -180,6 +185,8 @@
       <item path="include/RandomNoiseOperate.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="include/StepWaveformOperate.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/VolumeOperate.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/Envelope.cpp" ex="false" tool="1" flavor2="0">
       </item>
