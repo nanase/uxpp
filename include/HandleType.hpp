@@ -101,6 +101,24 @@ namespace uxpp {
      */
     noteOn = 13,
   };
+  
+  const std::unordered_map<std::string, HandleType>
+          HandleTypeString = {
+    {"zeroGate", HandleType::zeroGate},
+    {"reset", HandleType::reset},
+    {"silence", HandleType::silence},
+    {"noteOff", HandleType::noteOff},
+    {"volume", HandleType::volume},
+    {"panpot", HandleType::panpot},
+    {"vibrate", HandleType::vibrate},
+    {"waveform", HandleType::waveform},
+    {"editWaveform", HandleType::editWaveform},
+    {"envelope", HandleType::envelope},
+    {"fineTune", HandleType::fineTune},
+    {"keyShift", HandleType::keyShift},
+    {"portament", HandleType::portament},
+    {"noteOn", HandleType::noteOn},
+  };
 }
 
 #endif	/* HANDLETYPE_HPP */
