@@ -77,11 +77,6 @@ namespace uxpp {
     editWaveform = 8,
     
     /**
-     * 波形のパラメータを編集します。
-     */
-    edit = 8,
-
-    /**
      * パートの音量エンベロープを変更します。
      */
     envelope = 9,
