@@ -25,39 +25,63 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 #ifndef VOLUMEOPERATE_HPP
 #define	VOLUMEOPERATE_HPP
 
+#include <unordered_map>
+#include <string>
+#include "EnumBase.hpp"
+
+using namespace std;
+
 namespace uxpp {
-  
+
   /**
    * ボリュームに作用するオプションを表した列挙体です。
    */
-  enum class VolumeOperate {
-    /**
-     * 変化を伴わない音量。ボリューム。
-     */
-    volume,
-    
-    /**
-     * 変化を伴う音量。抑揚。
-     */
-    expression,
-    
-    /**
-     * 発音の強さ。ベロシティ。
-     */
-    velocity,
-    
-    /**
-     * 発音の増幅度。ゲイン。
-     */
-    gain,
-  }; 
-  
-  const std::unordered_map<std::string, VolumeOperate>
-          VolumeOperateString = {
-    {"volume", VolumeOperate::volume},
-    {"expression", VolumeOperate::expression},
-    {"velocity", VolumeOperate::velocity},
-    {"gain", VolumeOperate::gain},
+  class VolumeOperate : public EnumBase {
+  public:
+    // <editor-fold desc="-- Enums --">
+
+    enum values {
+      /**
+       * 変化を伴わない音量。ボリューム。
+       */
+      volume,
+
+      /**
+       * 変化を伴う音量。抑揚。
+       */
+      expression,
+
+      /**
+       * 発音の強さ。ベロシティ。
+       */
+      velocity,
+
+      /**
+       * 発音の増幅度。ゲイン。
+       */
+      gain,
+    };
+
+    // </editor-fold>
+
+    // <editor-fold desc="-- Methods --">
+
+    _key_exists_impl(VolumeOperate);
+    _value_exists_impl(VolumeOperate);
+    _toString_impl(VolumeOperate);
+    _tryParse_impl(VolumeOperate);
+    // </editor-fold>
+
+  private:
+    static const unordered_map<string, values> map;
+  };
+
+  const unordered_map<string, VolumeOperate::values>
+          VolumeOperate::map = {
+    {"volume", volume},
+    {"expression", expression},
+    {"velocity", velocity},
+    {"gain", gain},
   };
 }
 
