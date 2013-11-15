@@ -25,57 +25,82 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 #ifndef ENVELOPEOPERATE_H
 #define	ENVELOPEOPERATE_H
 
+#include <unordered_map>
+#include <string>
+#include "EnumBase.hpp"
+
+using namespace std;
+
 namespace uxpp {
 
   /**
    * エンベロープの状態を表す列挙体です。
    */
-  enum class EnvelopeOperate {
-    /**
-     * オプションなし。
-     * これは音源に対するオプションと組み合わせるために用意されています。
-     */
-    none = 0x00,
+  class EnvelopeOperate : public EnumBase {
+  public:
 
-    /**
-     * アタック時間。
-     */
-    attack = 0x01,
-    
-    /**
-     * ピーク時間。
-     */
-    peak = 0x02,
-    
-    /**
-     * ディケイ時間。
-     */
-    decay = 0x03,
-    
-    /**
-     * サスティンレベル。
-     */
-    sustain = 0x04,
-    
-    /**
-     * リリース時間。
-     */
-    release = 0x05,
+    // <editor-fold desc="-- Enums --">
+
+    enum values {
+      /**
+       * オプションなし。
+       * これは音源に対するオプションと組み合わせるために用意されています。
+       */
+      none = 0x00,
+
+      /**
+       * アタック時間。
+       */
+      attack = 0x01,
+
+      /**
+       * ピーク時間。
+       */
+      peak = 0x02,
+
+      /**
+       * ディケイ時間。
+       */
+      decay = 0x03,
+
+      /**
+       * サスティンレベル。
+       */
+      sustain = 0x04,
+
+      /**
+       * リリース時間。
+       */
+      release = 0x05,
+    };
+
+    // </editor-fold>
+
+    // <editor-fold desc="-- Methods --">
+
+    _key_exists_impl(EnvelopeOperate);
+    _value_exists_impl(EnvelopeOperate);
+    _toString_impl(EnvelopeOperate);
+    _tryParse_impl(EnvelopeOperate);
+    // </editor-fold>
+
+  private:
+    static const unordered_map<string, values> map;
   };
-  
-  const std::unordered_map<std::string, EnvelopeOperate>
-          EnvelopeOperateString = {
-    {"none", EnvelopeOperate::none},
-    {"attack", EnvelopeOperate::attack},
-    {"peak", EnvelopeOperate::peak},
-    {"decay", EnvelopeOperate::decay},
-    {"sustain", EnvelopeOperate::sustain},
-    {"release", EnvelopeOperate::release},    
-    {"a", EnvelopeOperate::attack},
-    {"p", EnvelopeOperate::peak},
-    {"d", EnvelopeOperate::decay},
-    {"s", EnvelopeOperate::sustain},
-    {"r", EnvelopeOperate::release},
+
+  const unordered_map<string, EnvelopeOperate::values>
+          EnvelopeOperate::map = {
+    {"none", none},
+    {"attack", attack},
+    {"peak", peak},
+    {"decay", decay},
+    {"sustain", sustain},
+    {"release", release},
+    {"a", attack},
+    {"p", peak},
+    {"d", decay},
+    {"s", sustain},
+    {"r", release},
   };
 }
 
