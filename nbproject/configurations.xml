@@ -23,6 +23,7 @@
         <itemPath>include/StepWaveformOperate.hpp</itemPath>
         <itemPath>include/VolumeOperate.hpp</itemPath>
       </logicalFolder>
+      <itemPath>include/EnumBase.hpp</itemPath>
       <itemPath>src/common.hpp</itemPath>
       <itemPath>src/template_utils.hpp</itemPath>
     </logicalFolder>
@@ -58,6 +59,8 @@
         </ccTool>
       </compileType>
       <item path="include/BasicWaveformOperate.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/EnumBase.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="include/Envelope.hpp" ex="false" tool="3" flavor2="0">
       </item>
@@ -118,6 +121,8 @@
       </compileType>
       <item path="include/BasicWaveformOperate.hpp" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="include/EnumBase.hpp" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="include/Envelope.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="include/EnvelopeOperate.hpp" ex="false" tool="3" flavor2="0">
@@ -167,6 +172,8 @@
         </ccTool>
       </compileType>
       <item path="include/BasicWaveformOperate.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/EnumBase.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="include/Envelope.hpp" ex="false" tool="3" flavor2="0">
       </item>
