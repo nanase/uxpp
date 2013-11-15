@@ -25,39 +25,63 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 #ifndef STEPWAVEFORMOPERATE_HPP
 #define	STEPWAVEFORMOPERATE_HPP
 
+#include <unordered_map>
+#include <string>
+#include "EnumBase.hpp"
+
+using namespace std;
+
 namespace uxpp {
-  
+
   /**
    * ステップ波形クラスに作用するオプションを表した列挙体です。
    */
-  enum class StepWaveformOperate {
-    /**
-     * 周波数係数。指定された値が出力周波数に乗算されます。
-     */
-    freqFactor = 0x0000,
-    
-    /**
-     * ユーザ波形の開始。このパラメータの実数値からユーザ波形として登録します。
-     */
-    begin,
-    
-    /**
-     * ユーザ波形の終了。このパラメータの実数値までユーザ波形として登録します。
-     */
-    end,
-    
-    /**
-     * ユーザ波形のキューイング。
-     */
-    queue,
+  class StepWaveformOperate : public EnumBase {
+  public:
+    // <editor-fold desc="-- Enums --">
+
+    enum values {
+      /**
+       * 周波数係数。指定された値が出力周波数に乗算されます。
+       */
+      freqFactor = 0x0000,
+
+      /**
+       * ユーザ波形の開始。このパラメータの実数値からユーザ波形として登録します。
+       */
+      begin,
+
+      /**
+       * ユーザ波形の終了。このパラメータの実数値までユーザ波形として登録します。
+       */
+      end,
+
+      /**
+       * ユーザ波形のキューイング。
+       */
+      queue,
+    };
+
+    // </editor-fold>
+
+    // <editor-fold desc="-- Methods --">
+
+    _key_exists_impl(StepWaveformOperate);
+    _value_exists_impl(StepWaveformOperate);
+    _toString_impl(StepWaveformOperate);
+    _tryParse_impl(StepWaveformOperate);
+    // </editor-fold>
+
+  private:
+    static const unordered_map<string, values> map;
   };
-  
-  const std::unordered_map<std::string, StepWaveformOperate>
-          StepWaveformOperateString = {
-    {"freqFactor", StepWaveformOperate::freqFactor},
-    {"begin", StepWaveformOperate::begin},
-    {"end", StepWaveformOperate::end},
-    {"queue", StepWaveformOperate::queue},
+
+  const unordered_map<string, StepWaveformOperate::values>
+          StepWaveformOperate::map = {
+    {"freqFactor", freqFactor},
+    {"begin", begin},
+    {"end", end},
+    {"queue", queue},
   };
 }
 
