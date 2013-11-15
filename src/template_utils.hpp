@@ -24,28 +24,6 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 #ifndef TEMPLATE_UTIL_HPP
 #define	TEMPLATE_UTIL_HPP
 
-#include <algorithm>
-#include <string>
-
-// <editor-fold desc="-- Functions --">
-
-template <typename X>
-bool key_exists(const std::unordered_map<std::string, X> map, std::string key) {
-  return key_exists(map, key, false);
-}
-
-template <typename X>
-bool key_exists(
-        const std::unordered_map<std::string, X> map,
-        std::string key,
-        bool ignoreCase) {
-  if (ignoreCase)
-    std::transform(key.begin(), key.end(), key.begin(), ::tolower);
-
-  return map.count(key) != 0;
-}
-
-// </editor-fold>
 
 #endif	/* TEMPLATE_UTIL_HPP */
 
