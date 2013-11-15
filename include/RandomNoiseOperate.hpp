@@ -27,28 +27,50 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 #include <unordered_map>
 #include <string>
+#include "EnumBase.hpp"
+
+using namespace std;
 
 namespace uxpp {
 
   /**
    * 擬似乱数ジェネレータに作用するオプションを表した列挙体です。
    */
-  enum class RandomNoiseOperate {
-    /**
-     * 擬似乱数ジェネレータのシード値。
-     */
-    seed = 0x0100,
+  class RandomNoiseOperate : public EnumBase {
+  public:
 
-    /**
-     * 擬似乱数の周期。
-     */
-    length,
+    // <editor-fold desc="-- Enums --">
+
+    enum values {
+      /**
+       * 擬似乱数ジェネレータのシード値。
+       */
+      seed = 0x0100,
+
+      /**
+       * 擬似乱数の周期。
+       */
+      length,
+    };
+
+    // </editor-fold>
+
+    // <editor-fold desc="-- Methods --">
+
+    _key_exists_impl(RandomNoiseOperate);
+    _value_exists_impl(RandomNoiseOperate);
+    _toString_impl(RandomNoiseOperate);
+    _tryParse_impl(RandomNoiseOperate);
+    // </editor-fold>
+
+  private:
+    static const unordered_map<string, values> map;
   };
 
-  const std::unordered_map<std::string, RandomNoiseOperate>
-          RandomNoiseOperateString = {
-    {"seed", RandomNoiseOperate::seed},
-    {"length", RandomNoiseOperate::length},
+  const unordered_map<string, RandomNoiseOperate::values>
+          RandomNoiseOperate::map = {
+    {"seed", seed},
+    {"length", length},
   };
 }
 
