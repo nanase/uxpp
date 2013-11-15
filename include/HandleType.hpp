@@ -25,99 +25,124 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 #ifndef HANDLETYPE_HPP
 #define	HANDLETYPE_HPP
 
+#include <unordered_map>
+#include <string>
+#include "EnumBase.hpp"
+
+using namespace std;
+
 namespace uxpp {
 
   /**
    * 内部で扱われるハンドルのタイプを表す列挙体です。
    */
-  enum class HandleType {
-    /**
-     * ゼロのゲートを持ち、発音されないノートを表します。
-     */
-    zeroGate = 0,
+  class HandleType : public EnumBase {
+  public:
 
-    /**
-     * パートまたはマスターの各パラメータをリセットします。
-     */
-    reset = 1,
+    // <editor-fold desc="-- Enums --">
 
-    /**
-     * ノートのエンベロープをサイレンス状態に移行させ、無音状態にします。
-     */
-    silence = 2,
+    enum values {
+      /**
+       * ゼロのゲートを持ち、発音されないノートを表します。
+       */
+      zeroGate = 0,
 
-    /**
-     * ノートのエンベロープをリリース状態に移行させます。
-     */
-    noteOff = 3,
+      /**
+       * パートまたはマスターの各パラメータをリセットします。
+       */
+      reset = 1,
 
-    /**
-     * ボリューム (音量) を変更します。
-     */
-    volume = 4,
+      /**
+       * ノートのエンベロープをサイレンス状態に移行させ、無音状態にします。
+       */
+      silence = 2,
 
-    /**
-     * パンポット (定位) を変更します。
-     */
-    panpot = 5,
+      /**
+       * ノートのエンベロープをリリース状態に移行させます。
+       */
+      noteOff = 3,
 
-    /**
-     * ビブラートに関するパラメータを設定します。
-     */
-    vibrate = 6,
+      /**
+       * ボリューム (音量) を変更します。
+       */
+      volume = 4,
 
-    /**
-     * パートに波形を割り当てます。
-     */
-    waveform = 7,
+      /**
+       * パンポット (定位) を変更します。
+       */
+      panpot = 5,
 
-    /**
-     * 波形のパラメータを編集します。
-     */
-    editWaveform = 8,
-    
-    /**
-     * パートの音量エンベロープを変更します。
-     */
-    envelope = 9,
+      /**
+       * ビブラートに関するパラメータを設定します。
+       */
+      vibrate = 6,
 
-    /**
-     * パートのファインチューン値を変更します。
-     */
-    fineTune = 10,
+      /**
+       * パートに波形を割り当てます。
+       */
+      waveform = 7,
 
-    /**
-     * パートの発音ノートキーをシフトします。
-     */
-    keyShift = 11,
+      /**
+       * 波形のパラメータを編集します。
+       */
+      editWaveform = 8,
 
-    /**
-     * ポルタメント効果に関するパラメータを設定します。
-     */
-    portament = 12,
+      /**
+       * パートの音量エンベロープを変更します。
+       */
+      envelope = 9,
 
-    /**
-     * パートを指定されたノートまたは周波数でアタック状態にします。
-     */
-    noteOn = 13,
+      /**
+       * パートのファインチューン値を変更します。
+       */
+      fineTune = 10,
+
+      /**
+       * パートの発音ノートキーをシフトします。
+       */
+      keyShift = 11,
+
+      /**
+       * ポルタメント効果に関するパラメータを設定します。
+       */
+      portament = 12,
+
+      /**
+       * パートを指定されたノートまたは周波数でアタック状態にします。
+       */
+      noteOn = 13,
+    };
+
+    // </editor-fold>
+
+    // <editor-fold desc="-- Methods --">
+
+    _key_exists_impl(HandleType);
+    _value_exists_impl(HandleType);
+    _toString_impl(HandleType);    
+    _tryParse_impl(HandleType);
+    // </editor-fold>
+
+  private:
+    static const unordered_map<string, values> map;
   };
-  
-  const std::unordered_map<std::string, HandleType>
-          HandleTypeString = {
-    {"zeroGate", HandleType::zeroGate},
-    {"reset", HandleType::reset},
-    {"silence", HandleType::silence},
-    {"noteOff", HandleType::noteOff},
-    {"volume", HandleType::volume},
-    {"panpot", HandleType::panpot},
-    {"vibrate", HandleType::vibrate},
-    {"waveform", HandleType::waveform},
-    {"editWaveform", HandleType::editWaveform},
-    {"envelope", HandleType::envelope},
-    {"fineTune", HandleType::fineTune},
-    {"keyShift", HandleType::keyShift},
-    {"portament", HandleType::portament},
-    {"noteOn", HandleType::noteOn},
+
+  const unordered_map<string, HandleType::values>
+          HandleType::map = {
+    {"zeroGate", zeroGate},
+    {"reset", reset},
+    {"silence", silence},
+    {"noteOff", noteOff},
+    {"volume", volume},
+    {"panpot", panpot},
+    {"vibrate", vibrate},
+    {"waveform", waveform},
+    {"editWaveform", editWaveform},
+    {"envelope", envelope},
+    {"fineTune", fineTune},
+    {"keyShift", keyShift},
+    {"portament", portament},
+    {"noteOn", noteOn},
   };
 }
 
