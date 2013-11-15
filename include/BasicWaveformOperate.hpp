@@ -25,29 +25,52 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 #ifndef BASICWAVEFORMOPERATE_HPP
 #define	BASICWAVEFORMOPERATE_HPP
 
+#include <unordered_map>
+#include <string>
+#include "EnumBase.hpp"
+
+using namespace std;
+
 namespace uxpp {
 
   /**
    * 基本波形クラスに作用するオプションを表した列挙体です。
    */
-  enum class BasicWaveformOperate {
-    /**
-     * デューティ比。
-     */
-    duty = 0x0100,
+  class BasicWaveformOperate : public EnumBase {
+  public:
 
-    /**
-     * 波形タイプ。
-     */
-    type,
-  };
-  
-  const std::unordered_map<std::string, BasicWaveformOperate>
-          BasicWaveformOperateString = {
-    {"duty", BasicWaveformOperate::duty},
-    {"type", BasicWaveformOperate::type},
-  };
-}
+    // <editor-fold desc="-- Enums --">
+
+    enum values {
+      /**
+       * デューティ比。
+       */
+      duty = 0x0100,
+
+      /**
+       * 波形タイプ。
+       */
+      type,
+      // </editor-fold>
+
+      // <editor-fold desc="-- Methods --">
+
+      _key_exists_impl(BasicWaveformOperate);
+      _value_exists_impl(BasicWaveformOperate);
+      _toString_impl(BasicWaveformOperate);
+      _tryParse_impl(BasicWaveformOperate);
+      // </editor-fold>
+
+      private:
+      static const unordered_map<string, values> map;
+    };
+
+    const unordered_map<string, BasicWaveformOperate::values>
+            BasicWaveformOperate::map = {
+      {"duty", duty},
+      {"type", type},
+    };
+  }
 
 #endif	/* BASICWAVEFORMOPERATE_HPP */
 
