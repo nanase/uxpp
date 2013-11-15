@@ -25,81 +25,106 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 #ifndef FMOPERATE_HPP
 #define	FMOPERATE_HPP
 
+#include <unordered_map>
+#include <string>
+#include "EnumBase.hpp"
+
+using namespace std;
+
 namespace uxpp {
-  
+
   /**
    * FM音源クラスに作用するオプションを表した列挙体です。
    */
-  enum class FMOperate {
-    /**
-     * オペレータ 0 に対する変調指数。
-     */
-    send0 = 0x0000,
-    
-    /**
-     * オペレータ 1 に対する変調指数。
-     */
-    send1 = 0x0100,
-    
-    /**
-     * オペレータ 2 に対する変調指数。
-     */
-    send2 = 0x0200,
-    
-    /**
-     * オペレータ 3 に対する変調指数。
-     */
-    send3 = 0x0300,
-    
-    /**
-     * 出力キャリア振幅。
-     */
-    output = 0x0400,
-    
-    /**
-     * キャリア周波数。
-     */
-    frequency = 0x0500,
-    
-    /**
-     * オペレータ 0。
-     */
-    operator0 = 0x0000,
-    
-    /**
-     * オペレータ 1。
-     */
-    operator1 = 0x1000,
-    
-    /**
-     * オペレータ 2。
-     */
-    operator2 = 0x2000,
-    
-    /**
-     * オペレータ 3。
-     */
-    operator3 = 0x3000,
+  class FMOperate : public EnumBase {
+  public:
+
+    // <editor-fold desc="-- Enums --">
+
+    enum values {
+      /**
+       * オペレータ 0 に対する変調指数。
+       */
+      send0 = 0x0000,
+
+      /**
+       * オペレータ 1 に対する変調指数。
+       */
+      send1 = 0x0100,
+
+      /**
+       * オペレータ 2 に対する変調指数。
+       */
+      send2 = 0x0200,
+
+      /**
+       * オペレータ 3 に対する変調指数。
+       */
+      send3 = 0x0300,
+
+      /**
+       * 出力キャリア振幅。
+       */
+      output = 0x0400,
+
+      /**
+       * キャリア周波数。
+       */
+      frequency = 0x0500,
+
+      /**
+       * オペレータ 0。
+       */
+      operator0 = 0x0000,
+
+      /**
+       * オペレータ 1。
+       */
+      operator1 = 0x1000,
+
+      /**
+       * オペレータ 2。
+       */
+      operator2 = 0x2000,
+
+      /**
+       * オペレータ 3。
+       */
+      operator3 = 0x3000,
+    };
+
+    // </editor-fold>
+
+    // <editor-fold desc="-- Methods --">
+
+    _key_exists_impl(FMOperate);
+    _value_exists_impl(FMOperate);
+    _toString_impl(FMOperate);
+    _tryParse_impl(FMOperate);
+    // </editor-fold>
+
+  private:
+    static const unordered_map<string, values> map;
   };
-  
-  const std::unordered_map<std::string, FMOperate>
-          FMOperateString = {
-    {"send0", FMOperate::send0},
-    {"send1", FMOperate::send1},
-    {"send2", FMOperate::send2},
-    {"send3", FMOperate::send3},
-    {"output", FMOperate::output},
-    {"out", FMOperate::output},
-    {"frequency", FMOperate::frequency},
-    {"freq", FMOperate::frequency},
-    {"operator0", FMOperate::operator0},
-    {"operator1", FMOperate::operator1},
-    {"operator2", FMOperate::operator2},
-    {"operator3", FMOperate::operator3},
-    {"op0", FMOperate::operator0},
-    {"op1", FMOperate::operator1},
-    {"op2", FMOperate::operator2},
-    {"op3", FMOperate::operator3},
+
+  const unordered_map<string, FMOperate::values>
+          FMOperate::map = {
+    {"send0", send0},
+    {"send1", send1},
+    {"send2", send2},
+    {"send3", send3},
+    {"output", output},
+    {"out", output},
+    {"frequency", frequency},
+    {"freq", frequency},
+    {"operator0", operator0},
+    {"operator1", operator1},
+    {"operator2", operator2},
+    {"operator3", operator3},
+    {"op0", operator0},
+    {"op1", operator1},
+    {"op2", operator2},
+    {"op3", operator3},
   };
 }
 
