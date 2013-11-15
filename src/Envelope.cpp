@@ -40,7 +40,7 @@ namespace uxpp {
 
   // <editor-fold desc="-- Methods --">
 
-  EnvelopeState Envelope::getState() const {
+  EnvelopeState::values Envelope::getState() const {
     return this->state;
   }
 
@@ -107,7 +107,7 @@ namespace uxpp {
   }
 
   void Envelope::setParameter(int32_t data1, float data2) {
-    switch ((EnvelopeOperate) data1) {
+    switch ((EnvelopeOperate::values) data1) {
       case EnvelopeOperate::attack:
         assert(data2 >= 0.0f);
         this->attackTime =

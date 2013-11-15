@@ -51,7 +51,7 @@ namespace uxpp {
      * 現在のエンベロープの状態を表す列挙値を取得します。
      * @return 現在のエンベロープの状態を表す列挙値。
      */
-    EnvelopeState getState() const;
+    EnvelopeState::values getState() const;
 
     /**
      * このインスタンスにおけるすべてのパラメータを既定値に戻します。
@@ -104,7 +104,7 @@ namespace uxpp {
     int32_t releaseStartTime, t2, t3, t5;
     int32_t attackTime, peakTime, decayTime, releaseTime;
     float da, dd, dr, sustainLevel;
-    EnvelopeState state;
+    EnvelopeState::values state;
   };
 }
 

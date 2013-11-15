@@ -25,33 +25,59 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 #ifndef ENVELOPESTATE_H
 #define	ENVELOPESTATE_H
 
+#include <unordered_map>
+#include <string>
+
+#include "EnumBase.hpp"
+
+using namespace std;
+
 namespace uxpp {
 
   /**
    * エンベロープの状態を表す列挙体です。
    */
-  enum class EnvelopeState {
-    /**
-     * 無音状態。
-     */
-    silence,
+  class EnvelopeState : public EnumBase {
+  public:
 
-    /**
-     * アタック(立ち上がり)状態。
-     */
-    attack,
+    // <editor-fold desc="-- Enums --">
 
-    /**
-     * リリース(余韻)状態。
-     */
-    release,
+    enum values {
+      /**
+       * 無音状態。
+       */
+      silence,
+
+      /**
+       * アタック(立ち上がり)状態。
+       */
+      attack,
+
+      /**
+       * リリース(余韻)状態。
+       */
+      release,
+    };
+
+    // </editor-fold>
+
+    // <editor-fold desc="-- Methods --">
+
+    _key_exists_impl(EnvelopeState);
+    _value_exists_impl(EnvelopeState);
+    _toString_impl(EnvelopeState);
+    _tryParse_impl(EnvelopeState);
+    // </editor-fold>
+
+  private:
+    static const unordered_map<string, values> map;
   };
-  
-  const std::unordered_map<std::string, EnvelopeState>
-          EnvelopeStateString = {
-    {"silence", EnvelopeState::silence},
-    {"attack", EnvelopeState::attack},
-    {"release", EnvelopeState::release},
+
+  const unordered_map<string, EnvelopeState::values>
+          EnvelopeState::map = {
+    {"silence", silence},
+    {"attack", attack},
+    {"release", release},
   };
 }
 
