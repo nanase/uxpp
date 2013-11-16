@@ -45,15 +45,4 @@ namespace uxpp {
     assert(value >= -1.0f && value <= 1.0f);
   }
   // </editor-fold>
-
-  // <editor-fold desc="-- Methods --">
-
-  float Panpot::getL() const {
-    return this->l;
-  }
-
-  float Panpot::getR() const {
-    return this->r;
-  }
-  // </editor-fold>
 }

@@ -49,24 +49,18 @@ namespace uxpp {
      * @param value パンポット値。
      */
     Panpot(float value);
-    // </editor-fold>
+    // </editor-fold>  
 
-    // <editor-fold desc="-- Methods --">
+  public:
     /**
-     * 左チャネルのレベルを取得または設定します。
-     * @return 左チャネルのレベル。
+     * 左チャネルのレベル。
      */
-    float getL() const;
-
+    const float l;
+    
     /**
      * 右チャネルのレベルを取得または設定します。
-     * @return 右チャネルのレベル。
      */
-    float getR() const;
-    // </editor-fold>    
-
-  private:
-    float l, r;
+    const float r;
   };
 }
 
