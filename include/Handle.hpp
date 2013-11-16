@@ -77,37 +77,26 @@ namespace uxpp {
     Handle(const Handle& handle, int32_t newTargetPart);
     // </editor-fold> 
 
-    // <editor-fold desc="-- Methods --">
+  public:
     /**
-     * 対象となるパートを取得します。
-     * @return 対象となるパート。
+     * 対象となるパート。
      */
-    int32_t getTargetPart() const;
-
+    const int32_t targetPart;
+    
     /**
-     * ハンドルのタイプを取得します。
-     * @return ハンドルのタイプ。
+     * ハンドルのタイプ。
      */
-    HandleType getType() const;
-
-    /**
-     * ハンドルに対する整数パラメータを取得します。
-     * @return ハンドルに対する整数パラメータ。
-     */
-    int32_t getData1() const;
-
+    const HandleType type;
+    
     /**
      * ハンドルに対する整数パラメータ。
-     * @return ハンドルに対する整数パラメータを取得します。
      */
-    float getData2() const;
-    // </editor-fold>  
-
-  private:
-    int32_t targetPart;
-    HandleType type;
-    int32_t data1;
-    float data2;
+    const int32_t data1;
+    
+    /**
+     * ハンドルに対する整数パラメータを取得します。
+     */
+    const float data2;
 
   };
 }
