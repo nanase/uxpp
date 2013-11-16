@@ -7,6 +7,8 @@
         <itemPath>src/Handle.cpp</itemPath>
         <itemPath>src/Panpot.cpp</itemPath>
       </logicalFolder>
+      <logicalFolder name="f2" displayName="waveform" projectFiles="true">
+      </logicalFolder>
       <itemPath>src/main.cpp</itemPath>
     </logicalFolder>
     <logicalFolder name="HeaderFiles" displayName="ヘッダー・ファイル" projectFiles="true">
@@ -22,6 +24,9 @@
         <itemPath>include/RandomNoiseOperate.hpp</itemPath>
         <itemPath>include/StepWaveformOperate.hpp</itemPath>
         <itemPath>include/VolumeOperate.hpp</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f2" displayName="waveform" projectFiles="true">
+        <itemPath>include/IWaveform.hpp</itemPath>
       </logicalFolder>
       <itemPath>include/EnumBase.hpp</itemPath>
       <itemPath>src/common.hpp</itemPath>
@@ -73,6 +78,8 @@
       <item path="include/Handle.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="include/HandleType.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/IWaveform.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="include/Panpot.hpp" ex="false" tool="3" flavor2="0">
       </item>
@@ -135,6 +142,8 @@
       </item>
       <item path="include/HandleType.hpp" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="include/IWaveform.hpp" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="include/Panpot.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="include/RandomNoiseOperate.hpp" ex="false" tool="3" flavor2="0">
@@ -186,6 +195,8 @@
       <item path="include/Handle.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="include/HandleType.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/IWaveform.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="include/Panpot.hpp" ex="false" tool="3" flavor2="0">
       </item>
