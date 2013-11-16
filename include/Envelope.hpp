@@ -100,7 +100,7 @@ namespace uxpp {
     // </editor-fold>
 
   private:
-    float samplingRate;
+    const float samplingRate;
     int32_t releaseStartTime, t2, t3, t5;
     int32_t attackTime, peakTime, decayTime, releaseTime;
     float da, dd, dr, sustainLevel;
