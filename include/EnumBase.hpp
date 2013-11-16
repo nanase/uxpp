@@ -71,7 +71,7 @@ namespace uxpp {
     // <editor-fold desc="value_exists">
 
     template <typename X>
-    static bool value_exists(const unordered_map<string, X> map, int value) {
+    static bool value_exists(const unordered_map<string, X> map, int32_t value) {
       for (auto pair : map) {
         if ((int) pair.second == value)
           return true;
@@ -82,7 +82,7 @@ namespace uxpp {
 
     // <editor-fold desc="macro">
 #define _value_exists_impl(T) \
-    static bool value_exists(int value) { \
+    static bool value_exists(int32_t value) { \
       return EnumBase::value_exists(T::map, value); \
     } 
     // </editor-fold>
