@@ -42,8 +42,8 @@ namespace uxpp {
      */
     virtual void getWaveforms(
             float data[],
-            double frequency[],
-            double phase[],
+            const double frequency[],
+            const double phase[],
             int32_t sampleTime,
             int32_t count) = 0;
 
