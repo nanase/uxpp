@@ -32,6 +32,7 @@ namespace uxpp {
    */
   class IWaveform {
   public:
+    // <editor-fold desc="-- Methods --">
     /**
      * 与えられた周波数と位相から波形を生成します。
      * @param data 生成された波形データが代入される配列。
@@ -69,6 +70,7 @@ namespace uxpp {
      * 波形のパラメータをリセットします。
      */
     virtual void reset() = 0;
+    // </editor-fold>
   };
 }
 
