@@ -51,23 +51,4 @@ namespace uxpp {
   data2(handle.data2) {
   }
   // </editor-fold> 
-
-  // <editor-fold desc="-- Methods --">
-
-  int32_t Handle::getTargetPart() const {
-    return this->targetPart;
-  }
-
-  HandleType Handle::getType() const {
-    return this->type;
-  }
-
-  int32_t Handle::getData1() const {
-    return this->data1;
-  }
-
-  float Handle::getData2() const {
-    return this->data2;
-  }
-  // </editor-fold>  
 }
