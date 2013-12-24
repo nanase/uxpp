@@ -30,8 +30,6 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 #include <algorithm>
 #include <boost/lexical_cast.hpp>
 
-using namespace std;
-
 namespace uxpp {
 
   class EnumBase {
@@ -41,28 +39,30 @@ namespace uxpp {
     // <editor-fold desc="key_exists">
 
     template <typename X>
-    static bool key_exists(const unordered_map<string, X> map, string key) {
+    static bool key_exists(
+            const std::unordered_map<std::string, X> map,
+            std::string key) {
       return key_exists(map, key, false);
     }
 
     template <typename X>
     static bool key_exists(
-            const unordered_map<string, X> map,
-            string key,
+            const std::unordered_map<std::string, X> map,
+            std::string key,
             bool ignoreCase) {
       if (ignoreCase)
-        transform(key.begin(), key.end(), key.begin(), ::tolower);
+        std::transform(key.begin(), key.end(), key.begin(), ::tolower);
 
       return map.count(key) != 0;
     }
 
     // <editor-fold desc="macro">
 #define _key_exists_impl(T) \
-    static bool key_exists(string key) { \
+    static bool key_exists(std::string key) { \
       return EnumBase::key_exists(T::map, key); \
     } \
 \
-    static bool key_exists(string key, bool ignoreCase) { \
+    static bool key_exists(std::string key, bool ignoreCase) { \
       return EnumBase::key_exists(T::map, key, ignoreCase); \
     }
     // </editor-fold>
@@ -71,7 +71,9 @@ namespace uxpp {
     // <editor-fold desc="value_exists">
 
     template <typename X>
-    static bool value_exists(const unordered_map<string, X> map, int32_t value) {
+    static bool value_exists(
+            const std::unordered_map<std::string, X> map,
+            int32_t value) {
       for (auto pair : map) {
         if ((int) pair.second == value)
           return true;
@@ -91,7 +93,9 @@ namespace uxpp {
     // <editor-fold desc="toString">
 
     template <typename X>
-    static string toString(const unordered_map<string, X> map, X value) {
+    static std::string toString(
+            const std::unordered_map<std::string, X> map,
+            X value) {
       for (auto pair : map) {
         if (pair.second == value)
           return pair.first;
@@ -102,7 +106,7 @@ namespace uxpp {
 
     // <editor-fold desc="macro">
 #define _toString_impl(T) \
-    static string toString(T::values value) { \
+    static std::string toString(T::values value) { \
       return EnumBase::toString(T::map, value); \
     } 
     // </editor-fold>
@@ -112,28 +116,28 @@ namespace uxpp {
 
     template <typename X>
     static bool tryParse(
-            const unordered_map<string, X> map,
-            string value,
+            const std::unordered_map<std::string, X> map,
+            std::string value,
             X* result) {
       return tryParse(map, value, result, false);
     }
 
     template <typename X>
     static bool tryParse(
-            const unordered_map<string, X> map,
-            string value,
+            const std::unordered_map<std::string, X> map,
+            std::string value,
             X* result,
             bool ignoreCase) {
       if (value[0] >= '0' && value[0] <= '9') {
         try {
           *result = (X) boost::lexical_cast<int>(value);
           return true;
-        } catch (exception& e) {
+        } catch (std::exception& e) {
         }
       }
 
       if (ignoreCase)
-        transform(value.begin(), value.end(), value.begin(), ::tolower);
+        std::transform(value.begin(), value.end(), value.begin(), ::tolower);
 
       auto s = map.find(value);
 
@@ -147,11 +151,11 @@ namespace uxpp {
 
     // <editor-fold desc="macro">
 #define _tryParse_impl(T) \
-    static bool tryParse(string value, T::values* result) { \
+    static bool tryParse(std::string value, T::values* result) { \
       return EnumBase::tryParse(T::map, value, result); \
     } \
 \
-    static bool tryParse(string value, T::values* result, bool ignoreCase) { \
+    static bool tryParse(std::string value, T::values* result, bool ignoreCase) { \
       return EnumBase::tryParse(T::map, value, result, ignoreCase); \
     }
 
