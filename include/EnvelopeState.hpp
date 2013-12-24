@@ -30,8 +30,6 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 #include "EnumBase.hpp"
 
-using namespace std;
-
 namespace uxpp {
 
   /**
@@ -70,10 +68,10 @@ namespace uxpp {
     // </editor-fold>
 
   private:
-    static const unordered_map<string, values> map;
+    static const std::unordered_map<std::string, values> map;
   };
 
-  const unordered_map<string, EnvelopeState::values>
+  const std::unordered_map<std::string, EnvelopeState::values>
           EnvelopeState::map = {
     {"silence", silence},
     {"attack", attack},
