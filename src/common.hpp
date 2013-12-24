@@ -30,6 +30,10 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 /* クランプ関数 */
 #define clamp(value, max, min)  (value < min ? min : value > max ? max : value)
 
+// ref.
+// www.techscore.com/blog/2013/02/08/how-to-calculate-array-length-in-c-and-cpp/
+#define ARRAY_LENGTH(array) (sizeof(array) / sizeof(array[0]))
+
 // </editor-fold>
 
 #endif	/* COMMON_H */
