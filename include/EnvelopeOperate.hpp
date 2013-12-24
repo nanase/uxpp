@@ -29,8 +29,6 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 #include <string>
 #include "EnumBase.hpp"
 
-using namespace std;
-
 namespace uxpp {
 
   /**
@@ -85,10 +83,10 @@ namespace uxpp {
     // </editor-fold>
 
   private:
-    static const unordered_map<string, values> map;
+    static const std::unordered_map<std::string, values> map;
   };
 
-  const unordered_map<string, EnvelopeOperate::values>
+  const std::unordered_map<std::string, EnvelopeOperate::values>
           EnvelopeOperate::map = {
     {"none", none},
     {"attack", attack},
