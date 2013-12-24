@@ -67,23 +67,23 @@ ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/uxpp: ${OBJECTFILES}
 
 ${OBJECTDIR}/src/Envelope.o: src/Envelope.cpp 
 	${MKDIR} -p ${OBJECTDIR}/src
-	${RM} $@.d
-	$(COMPILE.cc) -g -Iinclude -std=c++11 -MMD -MP -MF $@.d -o ${OBJECTDIR}/src/Envelope.o src/Envelope.cpp
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -Iinclude -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/Envelope.o src/Envelope.cpp
 
 ${OBJECTDIR}/src/Handle.o: src/Handle.cpp 
 	${MKDIR} -p ${OBJECTDIR}/src
-	${RM} $@.d
-	$(COMPILE.cc) -g -Iinclude -std=c++11 -MMD -MP -MF $@.d -o ${OBJECTDIR}/src/Handle.o src/Handle.cpp
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -Iinclude -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/Handle.o src/Handle.cpp
 
 ${OBJECTDIR}/src/Panpot.o: src/Panpot.cpp 
 	${MKDIR} -p ${OBJECTDIR}/src
-	${RM} $@.d
-	$(COMPILE.cc) -g -Iinclude -std=c++11 -MMD -MP -MF $@.d -o ${OBJECTDIR}/src/Panpot.o src/Panpot.cpp
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -Iinclude -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/Panpot.o src/Panpot.cpp
 
 ${OBJECTDIR}/src/main.o: src/main.cpp 
 	${MKDIR} -p ${OBJECTDIR}/src
-	${RM} $@.d
-	$(COMPILE.cc) -g -Iinclude -std=c++11 -MMD -MP -MF $@.d -o ${OBJECTDIR}/src/main.o src/main.cpp
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -Iinclude -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/main.o src/main.cpp
 
 # Subprojects
 .build-subprojects:
