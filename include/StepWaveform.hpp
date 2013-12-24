@@ -42,7 +42,7 @@ namespace uxpp {
      * 新しい StepWaveform クラスのインスタンスを初期化します。
      */
     StepWaveform();
-    
+
     StepWaveform(const StepWaveform& orig);
     // </editor-fold>
 
@@ -76,8 +76,9 @@ namespace uxpp {
     /**
      * 指定されたステップデータから波形生成用のデータを作成します。
      * @param data 波形生成のベースとなるステップデータ。
+     * @param length データ配列の要素数。
      */
-    void setStep(const int8_t data[]);
+    void setStep(const int8_t data[], const int8_t length);
 
     /**
      * エンベロープをアタック状態に遷移させます。
@@ -101,12 +102,12 @@ namespace uxpp {
      * 波形生成に用いられる生データの配列です。
      */
     float* value = nullptr;
-    
+
     /**
      * 波形生成に用いられるデータ長の長さです。
      */
     float length;
-    
+
     /**
      * 波形生成に用いられる周波数補正係数です。
      */
