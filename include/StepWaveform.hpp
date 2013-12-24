@@ -25,8 +25,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 #ifndef STEPWAVEFORM_HPP
 #define	STEPWAVEFORM_HPP
 
-
-#include <queue>
+#include <vector>
 #include <stdint.h>
 #include "IWaveform.hpp"
 
@@ -114,8 +113,7 @@ namespace uxpp {
     double freqFactor = 1.0;
 
   private:
-    std::queue<int8_t> queue;
-
+    std::vector<int8_t> queue;
   };
 }
 
