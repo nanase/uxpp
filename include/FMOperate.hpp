@@ -29,8 +29,6 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 #include <string>
 #include "EnumBase.hpp"
 
-using namespace std;
-
 namespace uxpp {
 
   /**
@@ -104,10 +102,10 @@ namespace uxpp {
     // </editor-fold>
 
   private:
-    static const unordered_map<string, values> map;
+    static const std::unordered_map<std::string, values> map;
   };
 
-  const unordered_map<string, FMOperate::values>
+  const std::unordered_map<std::string, FMOperate::values>
           FMOperate::map = {
     {"send0", send0},
     {"send1", send1},
