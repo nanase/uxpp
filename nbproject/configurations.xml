@@ -8,6 +8,7 @@
         <itemPath>src/Panpot.cpp</itemPath>
       </logicalFolder>
       <logicalFolder name="f2" displayName="waveform" projectFiles="true">
+        <itemPath>src/StepWaveform.cpp</itemPath>
       </logicalFolder>
       <itemPath>src/main.cpp</itemPath>
     </logicalFolder>
@@ -98,6 +99,8 @@
       </item>
       <item path="src/Panpot.cpp" ex="false" tool="1" flavor2="0">
       </item>
+      <item path="src/StepWaveform.cpp" ex="false" tool="1" flavor2="0">
+      </item>
       <item path="src/common.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/main.cpp" ex="false" tool="1" flavor2="0">
@@ -163,6 +166,8 @@
       </item>
       <item path="src/Panpot.cpp" ex="false" tool="1" flavor2="0">
       </item>
+      <item path="src/StepWaveform.cpp" ex="false" tool="1" flavor2="0">
+      </item>
       <item path="src/common.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="src/main.cpp" ex="false" tool="1" flavor2="0">
@@ -218,6 +223,8 @@
       <item path="src/Handle.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/Panpot.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/StepWaveform.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/common.hpp" ex="false" tool="3" flavor2="0">
       </item>

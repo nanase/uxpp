@@ -38,6 +38,7 @@ OBJECTFILES= \
 	${OBJECTDIR}/src/Envelope.o \
 	${OBJECTDIR}/src/Handle.o \
 	${OBJECTDIR}/src/Panpot.o \
+	${OBJECTDIR}/src/StepWaveform.o \
 	${OBJECTDIR}/src/main.o
 
 
@@ -79,6 +80,11 @@ ${OBJECTDIR}/src/Panpot.o: src/Panpot.cpp
 	${MKDIR} -p ${OBJECTDIR}/src
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -Iinclude -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/Panpot.o src/Panpot.cpp
+
+${OBJECTDIR}/src/StepWaveform.o: src/StepWaveform.cpp 
+	${MKDIR} -p ${OBJECTDIR}/src
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -Iinclude -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/StepWaveform.o src/StepWaveform.cpp
 
 ${OBJECTDIR}/src/main.o: src/main.cpp 
 	${MKDIR} -p ${OBJECTDIR}/src
