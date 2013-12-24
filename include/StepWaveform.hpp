@@ -100,7 +100,7 @@ namespace uxpp {
     /**
      * 波形生成に用いられる生データの配列です。
      */
-    float value[];
+    float* value = nullptr;
     
     /**
      * 波形生成に用いられるデータ長の長さです。
