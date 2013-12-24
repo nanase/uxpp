@@ -124,24 +124,6 @@ namespace uxpp {
   private:
     static const std::unordered_map<std::string, values> map;
   };
-
-  const std::unordered_map<std::string, HandleType::values>
-          HandleType::map = {
-    {"zeroGate", zeroGate},
-    {"reset", reset},
-    {"silence", silence},
-    {"noteOff", noteOff},
-    {"volume", volume},
-    {"panpot", panpot},
-    {"vibrate", vibrate},
-    {"waveform", waveform},
-    {"editWaveform", editWaveform},
-    {"envelope", envelope},
-    {"fineTune", fineTune},
-    {"keyShift", keyShift},
-    {"portament", portament},
-    {"noteOn", noteOn},
-  };
 }
 
 #endif	/* HANDLETYPE_HPP */

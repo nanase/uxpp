@@ -73,14 +73,6 @@ namespace uxpp {
   private:
     static const std::unordered_map<std::string, values> map;
   };
-
-  const std::unordered_map<std::string, VolumeOperate::values>
-          VolumeOperate::map = {
-    {"volume", volume},
-    {"expression", expression},
-    {"velocity", velocity},
-    {"gain", gain},
-  };
 }
 
 #endif	/* VOLUMEOPERATE_HPP */

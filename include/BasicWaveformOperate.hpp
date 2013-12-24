@@ -49,26 +49,21 @@ namespace uxpp {
        * 波形タイプ。
        */
       type,
-      // </editor-fold>
-
-      // <editor-fold desc="-- Methods --">
-
-      _key_exists_impl(BasicWaveformOperate);
-      _value_exists_impl(BasicWaveformOperate);
-      _toString_impl(BasicWaveformOperate);
-      _tryParse_impl(BasicWaveformOperate);
-      // </editor-fold>
-
-      private:
-      static const std::unordered_map<std::string, values> map;
     };
+    // </editor-fold>
 
-    const std::unordered_map<std::string, BasicWaveformOperate::values>
-            BasicWaveformOperate::map = {
-      {"duty", duty},
-      {"type", type},
-    };
-  }
+    // <editor-fold desc="-- Methods --">
+
+    _key_exists_impl(BasicWaveformOperate);
+    _value_exists_impl(BasicWaveformOperate);
+    _toString_impl(BasicWaveformOperate);
+    _tryParse_impl(BasicWaveformOperate);
+    // </editor-fold>
+
+  private:
+    static const std::unordered_map<std::string, values> map;
+  };
+}
 
 #endif	/* BASICWAVEFORMOPERATE_HPP */
 

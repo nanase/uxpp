@@ -6,6 +6,7 @@
         <itemPath>src/Envelope.cpp</itemPath>
         <itemPath>src/Handle.cpp</itemPath>
         <itemPath>src/Panpot.cpp</itemPath>
+        <itemPath>src/enum_map.cpp</itemPath>
       </logicalFolder>
       <logicalFolder name="f2" displayName="waveform" projectFiles="true">
         <itemPath>src/StepWaveform.cpp</itemPath>
@@ -103,6 +104,8 @@
       </item>
       <item path="src/common.hpp" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="src/enum_map.cpp" ex="false" tool="1" flavor2="0">
+      </item>
       <item path="src/main.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/template_utils.hpp" ex="false" tool="3" flavor2="0">
@@ -170,6 +173,8 @@
       </item>
       <item path="src/common.hpp" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="src/enum_map.cpp" ex="false" tool="1" flavor2="0">
+      </item>
       <item path="src/main.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/template_utils.hpp" ex="false" tool="3" flavor2="0">
@@ -227,6 +232,8 @@
       <item path="src/StepWaveform.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/common.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/enum_map.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/main.cpp" ex="false" tool="1" flavor2="0">
       </item>

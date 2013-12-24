@@ -85,21 +85,6 @@ namespace uxpp {
   private:
     static const std::unordered_map<std::string, values> map;
   };
-
-  const std::unordered_map<std::string, EnvelopeOperate::values>
-          EnvelopeOperate::map = {
-    {"none", none},
-    {"attack", attack},
-    {"peak", peak},
-    {"decay", decay},
-    {"sustain", sustain},
-    {"release", release},
-    {"a", attack},
-    {"p", peak},
-    {"d", decay},
-    {"s", sustain},
-    {"r", release},
-  };
 }
 
 #endif	/* ENVELOPEOPERATE_H */

@@ -104,26 +104,6 @@ namespace uxpp {
   private:
     static const std::unordered_map<std::string, values> map;
   };
-
-  const std::unordered_map<std::string, FMOperate::values>
-          FMOperate::map = {
-    {"send0", send0},
-    {"send1", send1},
-    {"send2", send2},
-    {"send3", send3},
-    {"output", output},
-    {"out", output},
-    {"frequency", frequency},
-    {"freq", frequency},
-    {"operator0", operator0},
-    {"operator1", operator1},
-    {"operator2", operator2},
-    {"operator3", operator3},
-    {"op0", operator0},
-    {"op1", operator1},
-    {"op2", operator2},
-    {"op3", operator3},
-  };
 }
 
 #endif	/* FMOPERATE_HPP */

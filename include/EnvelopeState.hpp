@@ -70,13 +70,6 @@ namespace uxpp {
   private:
     static const std::unordered_map<std::string, values> map;
   };
-
-  const std::unordered_map<std::string, EnvelopeState::values>
-          EnvelopeState::map = {
-    {"silence", silence},
-    {"attack", attack},
-    {"release", release},
-  };
 }
 
 #endif	/* ENVELOPESTATE_H */

@@ -73,14 +73,6 @@ namespace uxpp {
   private:
     static const std::unordered_map<std::string, values> map;
   };
-
-  const std::unordered_map<std::string, StepWaveformOperate::values>
-          StepWaveformOperate::map = {
-    {"freqFactor", freqFactor},
-    {"begin", begin},
-    {"end", end},
-    {"queue", queue},
-  };
 }
 
 #endif	/* STEPWAVEFORMOPERATE_HPP */

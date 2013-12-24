@@ -65,12 +65,6 @@ namespace uxpp {
   private:
     static const std::unordered_map<std::string, values> map;
   };
-
-  const std::unordered_map<std::string, RandomNoiseOperate::values>
-          RandomNoiseOperate::map = {
-    {"seed", seed},
-    {"length", length},
-  };
 }
 
 #endif	/* RANDOMNOISEOPERATE_HPP */
