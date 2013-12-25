@@ -28,6 +28,7 @@
         <itemPath>include/VolumeOperate.hpp</itemPath>
       </logicalFolder>
       <logicalFolder name="f2" displayName="waveform" projectFiles="true">
+        <itemPath>include/BasicWaveform.hpp</itemPath>
         <itemPath>include/IWaveform.hpp</itemPath>
         <itemPath>include/StepWaveform.hpp</itemPath>
       </logicalFolder>
@@ -66,6 +67,8 @@
           </incDir>
         </ccTool>
       </compileType>
+      <item path="include/BasicWaveform.hpp" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="include/BasicWaveformOperate.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="include/EnumBase.hpp" ex="false" tool="3" flavor2="0">
@@ -135,6 +138,8 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
+      <item path="include/BasicWaveform.hpp" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="include/BasicWaveformOperate.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="include/EnumBase.hpp" ex="false" tool="3" flavor2="0">
@@ -195,6 +200,8 @@
           <commandLine>-std=c++0x</commandLine>
         </ccTool>
       </compileType>
+      <item path="include/BasicWaveform.hpp" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="include/BasicWaveformOperate.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="include/EnumBase.hpp" ex="false" tool="3" flavor2="0">
