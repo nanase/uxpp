@@ -100,9 +100,9 @@ namespace uxpp {
     /**
      * 値の変化しない、常に一定値を出力するエンベロープを作成します。
      * @param samplingRate サンプリング周波数
-     * @return 一定出力値を持つエンベロープ。
+     * @return 一定出力値を持つエンベロープへのポインタ。
      */
-    static Envelope createConstant(float samplingRate);
+    static Envelope* createConstant(float samplingRate);
     // </editor-fold>
 
   private:
