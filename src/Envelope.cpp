@@ -33,7 +33,7 @@ namespace uxpp {
 
   Envelope::Envelope(float samplingRate) : samplingRate(samplingRate) {
     assert(samplingRate > 0.0f);
-    
+
     this->reset();
   }
   // </editor-fold>
@@ -65,7 +65,7 @@ namespace uxpp {
 
   void Envelope::relase(int32_t time) {
     assert(time >= 0);
-    
+
     if (this->state == EnvelopeState::attack) {
       this->state = EnvelopeState::release;
       this->releaseStartTime = time;
@@ -82,9 +82,9 @@ namespace uxpp {
 
   void Envelope::generate(int32_t time, float envelopes[], int32_t count) {
     assert(time >= 0);
-    assert(count > 0);    
-    assert(envelopes != nullptr);    
-    
+    assert(count > 0);
+    assert(envelopes != nullptr);
+
     float res;
     for (int i = 0; i < count; i++, time++) {
       if (this->state == EnvelopeState::attack) {
@@ -140,6 +140,29 @@ namespace uxpp {
       default:
         break;
     }
+  }
+  // </editor-fold>
+
+  // <editor-fold desc="-- Static Methods --">
+
+  void Envelope::createConstant(Envelope& envelope) {
+    envelope.reset();
+    envelope.attackTime = 0;
+    envelope.peakTime = 0;
+    envelope.decayTime = 0;
+    envelope.sustainLevel = 1.0f;
+    envelope.releaseTime = 0;
+  }
+
+  Envelope* Envelope::createConstant(float samplingRate) {
+    Envelope* envelope = new Envelope(samplingRate);
+    envelope->attackTime = 0;
+    envelope->peakTime = 0;
+    envelope->decayTime = 0;
+    envelope->sustainLevel = 1.0f;
+    envelope->releaseTime = 0;
+
+    return envelope;
   }
   // </editor-fold>
 }
