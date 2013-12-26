@@ -92,6 +92,12 @@ namespace uxpp {
 
     // <editor-fold desc="-- Static Methods --">
     /**
+     * 値の変化しない、常に一定値を出力するエンベロープに変更します。
+     * @param envelope 変更されるエンベロープに対する参照。
+     */
+    static void createConstant(Envelope& envelope);
+
+    /**
      * 値の変化しない、常に一定値を出力するエンベロープを作成します。
      * @param samplingRate サンプリング周波数
      * @return 一定出力値を持つエンベロープ。
