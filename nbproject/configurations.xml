@@ -185,6 +185,67 @@
       <item path="src/template_utils.hpp" ex="false" tool="3" flavor2="0">
       </item>
     </conf>
+    <conf name="DebugRPI" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <ccTool>
+          <incDir>
+            <pElem>include</pElem>
+          </incDir>
+          <commandLine>-std=c++0x</commandLine>
+        </ccTool>
+      </compileType>
+      <item path="include/BasicWaveform.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/BasicWaveformOperate.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/EnumBase.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/Envelope.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/EnvelopeOperate.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/EnvelopeState.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/FMOperate.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/Handle.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/HandleType.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/IWaveform.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/Panpot.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/RandomNoiseOperate.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/StepWaveform.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/StepWaveformOperate.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/VolumeOperate.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/Envelope.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/Handle.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/Panpot.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/StepWaveform.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/common.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/enum_map.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/template_utils.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+    </conf>
     <conf name="ReleaseRPI" type="1">
       <toolsSet>
         <compilerSet>default</compilerSet>

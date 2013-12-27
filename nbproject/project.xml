@@ -20,6 +20,10 @@
                     <type>1</type>
                 </confElem>
                 <confElem>
+                    <name>DebugRPI</name>
+                    <type>1</type>
+                </confElem>
+                <confElem>
                     <name>ReleaseRPI</name>
                     <type>1</type>
                 </confElem>

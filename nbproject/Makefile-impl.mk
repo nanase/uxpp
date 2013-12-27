@@ -31,7 +31,7 @@ DEFAULTCONF=Debug
 CONF=${DEFAULTCONF}
 
 # All Configurations
-ALLCONFS=Debug Release ReleaseRPI 
+ALLCONFS=Debug Release DebugRPI ReleaseRPI 
 
 
 # build
