@@ -101,7 +101,7 @@ namespace uxpp {
     /**
      * 波形生成に用いられる生データの配列です。
      */
-    float* value = nullptr;
+    float* value;
 
     /**
      * 波形生成に用いられるデータ長の長さです。
@@ -111,7 +111,7 @@ namespace uxpp {
     /**
      * 波形生成に用いられる周波数補正係数です。
      */
-    double freqFactor = 1.0;
+    double freqFactor;
 
   private:
     std::vector<int8_t> queue;

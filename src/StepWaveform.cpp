@@ -31,7 +31,9 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 namespace uxpp {
   // <editor-fold desc="-- Construnctors --">
 
-  StepWaveform::StepWaveform() {
+  StepWaveform::StepWaveform() :
+  value(nullptr),
+  freqFactor(1.0) {
     this->reset();
   }
 
