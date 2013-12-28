@@ -58,37 +58,37 @@ namespace uxpp {
             const double frequency[],
             const double phase[],
             int32_t sampleTime,
-            int32_t count) override;
+            int32_t count);
 
     /**
      * パラメータを指定してこの波形の設定値を変更します。
      * @param data1 整数パラメータ。
      * @param data2 実数パラメータ。
      */
-    virtual void setParameter(int32_t data1, float data2) override;
+    virtual void setParameter(int32_t data1, float data2);
 
     /**
      * 指定されたステップデータから波形生成用のデータを作成します。
      * @param data 波形生成のベースとなるステップデータ。
      * @param length データ配列の要素数。
      */
-    virtual void setStep(const int8_t data[], const int8_t length);
+    void setStep(const int8_t data[], const int8_t length);
 
     /**
      * エンベロープをアタック状態に遷移させます。
      */
-    virtual void attack() override;
+    virtual void attack();
 
     /**
      * エンベロープをリリース状態に遷移させます。
      * @param time リリースされたサンプル時間。
      */
-    virtual void release(int32_t time) override;
+    virtual void release(int32_t time);
 
     /**
      * 波形のパラメータをリセットします。
      */
-    virtual void reset() override;
+    virtual void reset();
     // </editor-fold>
 
   protected:
