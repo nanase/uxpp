@@ -25,6 +25,8 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 #ifndef BASICWAVEFORM_HPP
 #define	BASICWAVEFORM_HPP
 
+#include <utility>
+#include <list>
 #include "StepWaveform.hpp"
 
 namespace uxpp {
@@ -54,6 +56,15 @@ namespace uxpp {
      */
     virtual void reset() override;
     // </editor-fold>
+
+  private:
+    // <editor-fold desc="-- Static Fields --">
+    static std::list<std::pair<int8_t, std::vector<float >> > cache;
+    // </editor-fold>
+
+    // <editor-fold desc="-- Methods --">
+    void generateStep(const float duty);
+    // </editor-fold>
   };
 
   /**
@@ -80,6 +91,15 @@ namespace uxpp {
      * 波形のパラメータをリセットします。
      */
     virtual void reset() override;
+    // </editor-fold>
+
+  private:
+    // <editor-fold desc="-- Static Fields --">
+    static std::list<std::pair<int8_t, std::vector<float >> > cache;
+    // </editor-fold>
+
+    // <editor-fold desc="-- Methods --">
+    void generateStep(const int step);
     // </editor-fold>
   };
 }
