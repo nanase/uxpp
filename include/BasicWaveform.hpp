@@ -47,12 +47,12 @@ namespace uxpp {
      * @param data1 整数パラメータ。
      * @param data2 実数パラメータ。
      */
-    virtual void setParameter(int32_t data1, float data2);
+    virtual void setParameter(int32_t data1, float data2) override;
 
     /**
      * 波形のパラメータをリセットします。
      */
-    virtual void reset();
+    virtual void reset() override;
     // </editor-fold>
   };
 
@@ -74,12 +74,12 @@ namespace uxpp {
      * @param data1 整数パラメータ。
      * @param data2 実数パラメータ。
      */
-    virtual void setParameter(int32_t data1, float data2);
+    virtual void setParameter(int32_t data1, float data2) override;
 
     /**
      * 波形のパラメータをリセットします。
      */
-    virtual void reset();
+    virtual void reset() override;
     // </editor-fold>
   };
 }
