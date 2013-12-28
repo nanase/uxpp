@@ -9,6 +9,7 @@
         <itemPath>src/enum_map.cpp</itemPath>
       </logicalFolder>
       <logicalFolder name="f2" displayName="waveform" projectFiles="true">
+        <itemPath>src/BasicWaveform.cpp</itemPath>
         <itemPath>src/StepWaveform.cpp</itemPath>
       </logicalFolder>
       <itemPath>src/main.cpp</itemPath>
@@ -97,6 +98,8 @@
       </item>
       <item path="include/VolumeOperate.hpp" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="src/BasicWaveform.cpp" ex="false" tool="1" flavor2="0">
+      </item>
       <item path="src/Envelope.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/Handle.cpp" ex="false" tool="1" flavor2="0">
@@ -168,6 +171,8 @@
       </item>
       <item path="include/VolumeOperate.hpp" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="src/BasicWaveform.cpp" ex="false" tool="1" flavor2="0">
+      </item>
       <item path="src/Envelope.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/Handle.cpp" ex="false" tool="1" flavor2="0">
@@ -228,6 +233,8 @@
       <item path="include/StepWaveformOperate.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="include/VolumeOperate.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/BasicWaveform.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/Envelope.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -290,6 +297,8 @@
       <item path="include/StepWaveformOperate.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="include/VolumeOperate.hpp" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="src/BasicWaveform.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/Envelope.cpp" ex="false" tool="1" flavor2="0">
       </item>
