@@ -32,24 +32,8 @@ namespace uxpp {
   // <editor-fold desc="-- Construnctors --">
 
   StepWaveform::StepWaveform() :
-  value(nullptr),
   freqFactor(1.0) {
     this->reset();
-  }
-
-  StepWaveform::StepWaveform(const StepWaveform& orig) {
-    const int length = ARRAY_LENGTH(orig.value);
-    this->value = new float[length];
-
-    for (int i = 0; i < length; i++)
-      this->value[i] = orig.value[i];
-  }
-  // </editor-fold>
-
-  // <editor-fold desc="-- Destructors --">
-
-  StepWaveform::~StepWaveform() {
-    delete[] this->value;
   }
   // </editor-fold>
 
@@ -61,8 +45,8 @@ namespace uxpp {
           const double phase[],
           int32_t sampleTime,
           int32_t count) {
-    const int value_length = ARRAY_LENGTH(this->value);
-
+    const int value_length = this->value.size();
+    
     for (int i = 0; i < count; i++) {
       float tmp = (float) (phase[i] * frequency[i] * this->freqFactor);
 
@@ -117,14 +101,14 @@ namespace uxpp {
     float a = 2.0f / (max - min);
     this->length = (float) length;
 
-    delete[] this->value;
-    this->value = new float[length];
+    this->value.clear();
+    this->value.reserve(length);
 
     if (max == min)
       return;
 
     for (int i = 0; i < length; i++)
-      this->value[i] = (data[i] - min) * a - 1.0f;
+      this->value.push_back((data[i] - min) * a - 1.0f);
   }
 
   void StepWaveform::attack() {

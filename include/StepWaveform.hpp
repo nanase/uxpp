@@ -42,12 +42,6 @@ namespace uxpp {
      * 新しい StepWaveform クラスのインスタンスを初期化します。
      */
     StepWaveform();
-
-    StepWaveform(const StepWaveform& orig);
-    // </editor-fold>
-
-    // <editor-fold desc="-- Destructors --">
-    virtual ~StepWaveform();
     // </editor-fold>
 
     // <editor-fold desc="-- Methods --">
@@ -101,7 +95,7 @@ namespace uxpp {
     /**
      * 波形生成に用いられる生データの配列です。
      */
-    float* value;
+    std::vector<float> value;
 
     /**
      * 波形生成に用いられるデータ長の長さです。
