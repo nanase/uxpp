@@ -101,13 +101,13 @@ namespace uxpp {
     this->length = (float) length;
 
     this->value.clear();
-    this->value.reserve(length);
+    this->value.resize(length, 0.0f);
 
     if (max == min)
       return;
 
     for (int i = 0; i < length; i++)
-      this->value.push_back((data[i] - min) * a - 1.0f);
+      this->value[i] = (data[i] - min) * a - 1.0f;
   }
 
   void StepWaveform::attack() {
