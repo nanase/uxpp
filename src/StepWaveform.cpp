@@ -33,7 +33,6 @@ namespace uxpp {
 
   StepWaveform::StepWaveform() :
   freqFactor(1.0) {
-    this->reset();
   }
   // </editor-fold>
 
