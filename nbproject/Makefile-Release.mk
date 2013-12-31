@@ -38,6 +38,7 @@ OBJECTFILES= \
 	${OBJECTDIR}/src/BasicWaveform.o \
 	${OBJECTDIR}/src/Envelope.o \
 	${OBJECTDIR}/src/Handle.o \
+	${OBJECTDIR}/src/Noise.o \
 	${OBJECTDIR}/src/Panpot.o \
 	${OBJECTDIR}/src/StepWaveform.o \
 	${OBJECTDIR}/src/enum_map.o \
@@ -82,6 +83,11 @@ ${OBJECTDIR}/src/Handle.o: src/Handle.cpp
 	${MKDIR} -p ${OBJECTDIR}/src
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -Iinclude -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/Handle.o src/Handle.cpp
+
+${OBJECTDIR}/src/Noise.o: src/Noise.cpp 
+	${MKDIR} -p ${OBJECTDIR}/src
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -Iinclude -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/Noise.o src/Noise.cpp
 
 ${OBJECTDIR}/src/Panpot.o: src/Panpot.cpp 
 	${MKDIR} -p ${OBJECTDIR}/src

@@ -10,6 +10,7 @@
       </logicalFolder>
       <logicalFolder name="f2" displayName="waveform" projectFiles="true">
         <itemPath>src/BasicWaveform.cpp</itemPath>
+        <itemPath>src/Noise.cpp</itemPath>
         <itemPath>src/StepWaveform.cpp</itemPath>
       </logicalFolder>
       <itemPath>src/main.cpp</itemPath>
@@ -31,6 +32,7 @@
       <logicalFolder name="f2" displayName="waveform" projectFiles="true">
         <itemPath>include/BasicWaveform.hpp</itemPath>
         <itemPath>include/IWaveform.hpp</itemPath>
+        <itemPath>include/Noise.hpp</itemPath>
         <itemPath>include/StepWaveform.hpp</itemPath>
       </logicalFolder>
       <itemPath>include/EnumBase.hpp</itemPath>
@@ -88,6 +90,8 @@
       </item>
       <item path="include/IWaveform.hpp" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="include/Noise.hpp" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="include/Panpot.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="include/RandomNoiseOperate.hpp" ex="false" tool="3" flavor2="0">
@@ -103,6 +107,8 @@
       <item path="src/Envelope.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/Handle.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/Noise.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/Panpot.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -161,6 +167,8 @@
       </item>
       <item path="include/IWaveform.hpp" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="include/Noise.hpp" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="include/Panpot.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="include/RandomNoiseOperate.hpp" ex="false" tool="3" flavor2="0">
@@ -176,6 +184,8 @@
       <item path="src/Envelope.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/Handle.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/Noise.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/Panpot.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -224,6 +234,8 @@
       </item>
       <item path="include/IWaveform.hpp" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="include/Noise.hpp" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="include/Panpot.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="include/RandomNoiseOperate.hpp" ex="false" tool="3" flavor2="0">
@@ -239,6 +251,8 @@
       <item path="src/Envelope.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/Handle.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/Noise.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/Panpot.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -288,6 +302,8 @@
       </item>
       <item path="include/IWaveform.hpp" ex="false" tool="3" flavor2="0">
       </item>
+      <item path="include/Noise.hpp" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="include/Panpot.hpp" ex="false" tool="3" flavor2="0">
       </item>
       <item path="include/RandomNoiseOperate.hpp" ex="false" tool="3" flavor2="0">
@@ -303,6 +319,8 @@
       <item path="src/Envelope.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/Handle.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="src/Noise.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="src/Panpot.cpp" ex="false" tool="1" flavor2="0">
       </item>
