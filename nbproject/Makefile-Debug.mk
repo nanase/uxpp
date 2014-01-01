@@ -40,6 +40,7 @@ OBJECTFILES= \
 	${OBJECTDIR}/src/Handle.o \
 	${OBJECTDIR}/src/Noise.o \
 	${OBJECTDIR}/src/Panpot.o \
+	${OBJECTDIR}/src/Random.o \
 	${OBJECTDIR}/src/StepWaveform.o \
 	${OBJECTDIR}/src/enum_map.o \
 	${OBJECTDIR}/src/main.o
@@ -93,6 +94,11 @@ ${OBJECTDIR}/src/Panpot.o: src/Panpot.cpp
 	${MKDIR} -p ${OBJECTDIR}/src
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -Iinclude -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/Panpot.o src/Panpot.cpp
+
+${OBJECTDIR}/src/Random.o: src/Random.cpp 
+	${MKDIR} -p ${OBJECTDIR}/src
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -Iinclude -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/src/Random.o src/Random.cpp
 
 ${OBJECTDIR}/src/StepWaveform.o: src/StepWaveform.cpp 
 	${MKDIR} -p ${OBJECTDIR}/src
